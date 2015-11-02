@@ -42,7 +42,7 @@
             continue
           }
 
-          if (yAxis.series[i].visible) {
+          if (yAxis.series[i].visible&& yAxis.series[i].name !=="Navigator") {
             rect.x = yAxis.left + yAxis.offset + (yAxis.options.showRectsX || 0)
             rect.x = (opposite) ? rect.x + yAxis.width : rect.x - rect.width
 
